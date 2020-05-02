@@ -1,0 +1,437 @@
+/* Reset CSS */
+/* http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* MY CSS */
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+button {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+}
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #101010;
+}
+
+.bg-wrap {
+    height: 100%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: auto;
+}
+.wrapper {
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+}
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.content-wrapper article {
+    position: relative;
+    font-size: 14px;
+}
+.content-wrapper article:last-child {
+    width: 41%;
+}
+.content-wrapper article > p {
+    line-height: 20px;
+    margin: 35px 0 20px;
+}
+
+.highlights {
+    display: flex;
+    justify-content: space-between;
+    width: 1110px;
+    margin-top: 75px;
+}
+
+#hero-image {
+    background-image: url("../../images/hero_image.jpg");
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+}
+#hero-image > .bg-linear {
+    background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
+}
+
+#hero-image header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    margin-top: 15px;
+}
+
+.logo {
+    width: 222px;
+    font-size: 18px;
+}
+.logo::before {
+    content: url('https://api.iconify.design/dashicons-cloud.svg?height=28&color=white');
+    vertical-align: -0.3em;
+    padding-right: 10px;
+}
+
+nav {
+    width: 445px;
+}
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hero-image header > .button {
+    display: flex;
+    align-items: center;
+    width: 222px;
+}
+#hero-image header > .button > .login-button {
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin-left: 25px;
+
+    font-weight: normal;
+    
+    color: white;
+}
+#hero-image header > .button > .lang-button {
+    width: 96px;
+    height: 32px;
+    background: transparent;
+    border: transparent;
+}
+#hero-image header > .button > .lang-button > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+#hero-image header > .button > .lang-button > ul .flag-icon {
+    font-size: 32px;
+}
+#hero-image header > .button > .lang-button > ul .caret-icon {
+    font-size: 20px;
+}
+
+#hero-image section > article {
+    display: flex;
+    flex-direction: column;
+    height: 338px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 140px;
+}
+#hero-image section > article > h1 {
+    font-size: 72px;
+    color: white;
+}
+#hero-image section > article > p {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    line-height: 36px;
+}
+#hero-image section > article > button {
+    width: 160px;
+    height: 50px;
+    background-color: white;
+    border-radius: 6px;
+    border-style: none;
+
+    font-weight: 600;
+    font-size: 14px;
+    color: #ED4C5C;
+}
+
+#video-section article > a {
+    color: #ED4C5C;
+}
+#video-section article > .play-button {
+    position: absolute;
+    top: 123px;
+    left: -33px;
+    width: 66px;
+    height: 66px;
+    background-color: #ED4C5C;
+    border-radius: 33px;
+
+    text-align: center;
+    line-height: 80px;
+}
+#video-section article > .play-button > .play-icon {
+    font-size: 25px;
+    color: white;
+}
+#video-section article > img {
+    border-radius: 15px;
+}
+
+#overview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 660px;
+    padding-top: 63px;
+    background-color: #FAFAFA;
+    text-align: center;
+}
+#overview > .highlights article {
+    position: relative;
+    font-weight: bold;
+    font-size: 12px;
+}
+#overview > .highlights article > img {
+    border-radius: 8px;
+}
+#overview > .highlights article > .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 157px;
+    left: 29px;
+    width: 293px;
+    height: 198px;
+    background-color: white;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+#overview > .highlights article > .content > h3 {
+    line-height: 22px;
+}
+#overview > .highlights article > .content > p {
+    font-weight: normal;
+    color: #101010;
+    line-height: 18px;
+}
+#overview > .highlights article > .content > a {
+    color: #ED4C5C;
+}
+
+#features-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 63px;
+}
+#features-section > .highlights {
+    margin-top: 64px;
+}
+#features-section > .highlights > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#features-section > .highlights > article header {
+    position: relative;
+}
+#features-section > .highlights > article header h2 {
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 120px;
+    color: rgba(16, 16, 16, 0.08);
+}
+#features-section > .highlights > article header .iconify {
+    position: absolute;
+    color: #ED4C5C;
+    opacity: 0.9;
+}
+#features-section > .highlights > article header > .cloud-icon {
+    top: 57px;
+    left: 18px;
+    font-size: 80px;
+}
+#features-section > .highlights > article header > .security-scan-icon {
+    top: 65px;
+    left: 25px;
+    font-size: 65px;
+}
+#features-section > .highlights > article header > .pdf-icon, .csv-icon {
+    top: 57px;
+    left: 21px;
+    font-size: 77px;
+}
+#features-section > .highlights > article > section > article {
+    margin-top: 20px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#features-section > .highlights > article > section > article > p {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+#app-download {
+    background-color: #ED4C5C;
+    color: white;
+}
+#app-download article > .app-download-icons {
+    display: flex;
+    width: 134px;
+    height: 60px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#app-download article > .app-download-icons button {
+    background: transparent;
+    border: none;
+}
+#app-download article > .app-download-icons button > .iconify {
+    font-size: 32px;
+    color: white;
+}
+#app-download article img {
+    background-color: #C4C4C4;
+    border-radius: 15px;
+    opacity: 0.5;;
+    z-index: 1;
+    position: absolute;
+}
+#app-download article > .main-img {
+    position: relative;
+    opacity: 1;
+    z-index: 2;
+}
+#app-download article > .left-img {
+    top: 22px;
+    left: -44px;
+}
+#app-download article > .right-img {
+    top: 22px;
+    left: 106px;
+}
+
+footer {
+    height: 435px;
+    background-color: #FAFAFA;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 12px;
+}
+footer > .inner {
+    display: flex;
+    justify-content: space-between;
+    height: 264px;
+    width: 1078px;
+}
+footer > .inner h3 {
+    margin-bottom: 33px;
+}
+footer > .inner a {
+    color: black;
+}
+
+footer > .inner > .address > p {
+    line-height: 18px;
+}
+footer > .inner > .address > .copyright {
+    margin-top: 140px;
+}
+
+footer > .inner > .services > ul {
+    line-height: 19px;
+}
+
+footer > .inner > .get-in-touch > p {
+    margin-bottom: 11px;
+}
+footer > .inner > .get-in-touch > .icon {
+    display: flex;
+    width: 66px;
+    justify-content: space-between;
+    padding-top: 9px;
+}
+footer > .inner > .get-in-touch > .icon > button {
+    background: transparent;
+    border: transparent;
+}
+footer > .inner > .get-in-touch > .icon > .iconify {
+    font-size: 13px;
+}
